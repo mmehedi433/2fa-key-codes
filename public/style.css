@@ -1,0 +1,128 @@
+body {
+    background: #0f172a;
+    color: #fff;
+    font-family:
+        Segoe UI,
+        sans-serif;
+    margin: 0;
+    padding: 20px;
+
+    max-width: 60vw;
+    margin: auto;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+input {
+    background: #334155;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #334155;
+}
+
+.code {
+    font-size: 22px;
+    font-weight: bold;
+    color: #22c55e;
+    cursor: pointer;
+}
+
+.progress {
+    width: 100px;
+    height: 6px;
+    background: #334155;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #22c55e;
+}
+.code {
+    font-size: 22px;
+    font-weight: bold;
+    color: #22c55e;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.code:hover {
+    transform: scale(1.05);
+}
+
+.copied {
+    transform: scale(1.15);
+    color: #60a5fa !important;
+}
+
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #22c55e;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+    pointer-events: none;
+    font-weight: 600;
+    z-index: 9999;
+}
+
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.actions button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.icon-btn:hover {
+    transform: scale(1.15);
+}
