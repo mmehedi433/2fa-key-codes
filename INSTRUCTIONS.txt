@@ -1,3 +1,13 @@
 render.com e deploy kora. 
 
 eta github mmehedi433 e up kora hoise e first e using commands. then render e connect kora hoise. github e up dile auot render e sync hoy. 
+
+---------
+
+Etay data add korar jnno agy "node server.js" run korte hbe. then 
+1. http://localhost:3000/ e giye data add or remove kora lagbe. 
+2. Shb complete hole nicher code run kore github e deploy korte hbe.
+git add .
+git commit -m "Key added"
+git push
+3. then update hbe. 
