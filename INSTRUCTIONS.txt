@@ -1,0 +1,3 @@
+render.com e deploy kora. 
+
+eta github mmehedi433 e up kora hoise e first e using commands. then render e connect kora hoise. github e up dile auot render e sync hoy. 
