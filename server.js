@@ -58,6 +58,21 @@ app.get("/api/codes", (req, res) => {
     });
 });
 
+app.delete("/api/accounts/:id", (req, res) => {
+    db.run("DELETE FROM accounts WHERE id=?", [req.params.id], function (err) {
+        if (err) {
+            return res.status(500).json({
+                error: err.message,
+            });
+        }
+
+        res.json({
+            success: true,
+            deleted: this.changes,
+        });
+    });
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
